@@ -5,11 +5,16 @@
 
 > Contexto
 
-Um projeto que tem como objetivo fazer o escopo de um formulário de cadastro com página de login.
+Um projeto que tem como objetivo fazer uma página de cadastro que logo após você pode validar o acesso colocando seu email e senha que foram cadastrados
+no banco de dados do XAMPP.
 
 ## Tecnologias
+- PHP
 - HTML
 - CSS
+- XAMPP
+- SQL
+- MySQL
 - Git e Github
 
 ## Contato
