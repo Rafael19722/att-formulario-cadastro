@@ -15,7 +15,7 @@
         />
       </div>
       <div class="form">
-        <form action="processar-dados.php" method="post">
+        <form  id="formulario_cadastro">
           <div class="form-header">
             <div class="title">
               <h1>Cadastre-se</h1>
@@ -30,7 +30,6 @@
               <input
                 type="text"
                 id="firstname"
-                name="firstname"
                 placeholder="Digite seu primeiro nome"
                 required
               />
@@ -41,7 +40,6 @@
               <input
                 type="text"
                 id="lastname"
-                name="lastname"
                 placeholder="Digite seu Sobrenome"
                 required
               />
@@ -51,7 +49,6 @@
               <input
                 type="email"
                 id="email"
-                name="email"
                 placeholder="E-mail"
                 required
               />
@@ -61,7 +58,6 @@
               <input
                 type="tel"
                 id="number"
-                name="number"
                 placeholder="(xx) xxxx-xxxx"
                 required
               />
@@ -71,7 +67,6 @@
               <input
                 type="password"
                 id="password"
-                name="password"
                 placeholder="Digite sua senha"
                 required
               />
@@ -81,7 +76,6 @@
               <input
                 type="password"
                 id="confirmPassword"
-                name="confirmPassword"
                 placeholder="Confirme a senha"
                 required
               />
@@ -116,5 +110,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

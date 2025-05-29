@@ -1,4 +1,3 @@
-<?php require_once "login-usuario.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +25,6 @@
           <button type="submit" name="acessar"><a>continuar</a></button>
         </div>
       </form>
-      <?php 
-        if(isset($_POST['acessar'])) {
-          login($conn);
-        }
-      ?>
     </div>
   </div>
 </body>
