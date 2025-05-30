@@ -1,0 +1,30 @@
+{
+  "name": "att-formulario-cadastro",
+  "version": "1.0.0",
+  "description": "![preview](./assets/foto_exemplo1.PNG)\r ![preview](./assets/foto_exemplo2.PNG)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael19722/att-formulario-cadastro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafael19722/att-formulario-cadastro/issues"
+  },
+  "homepage": "https://github.com/Rafael19722/att-formulario-cadastro#readme",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
