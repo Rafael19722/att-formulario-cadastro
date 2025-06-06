@@ -18,6 +18,8 @@ document.getElementById("form_login").addEventListener("submit", async (e) => {
         if (!response.ok) {
             console.error("API error", feedback);
         } else {
+            console.log(feedback);
+            alert("successfully logged in");
             localStorage.setItem("token", feedback.token);
             window.location.href = "welcome.html";
         }

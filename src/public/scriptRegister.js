@@ -16,8 +16,6 @@ document
             gender: selectedGender.id,
         };
 
-        console.log(data);
-
         try {
             const response = await fetch("http://localhost:3000/api/register", {
                 method: "POST",
@@ -29,9 +27,11 @@ document
 
             if (!response.ok) {
                 console.error("API error", feedback);
+                alert(feedback.error);
             } else {
-                console.log("Register successful");
                 console.log(feedback);
+                alert("Register successful");
+                window.location.href = "login.html";
             }
         } catch (error) {
             console.log("Error to conect to API", error);

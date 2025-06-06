@@ -1,32 +1,26 @@
 const token = localStorage.getItem("token");
 
-if (!token) {
-    window.location.href = "login.html";
-}
+document.addEventListener("DOMContentLoaded", async () => {
+    if (!token) {
+        alert("Você precisa estar logado para acessar essa página.");
+        window.location.href = "login.html"; // Redireciona para login se não tiver token
+    } else {
+        const response = await fetch("http://localhost:3000/api/me", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`, // Envia o token no header
+            },
+        });
+        const feedback = await response.json();
 
-fetch("http://localhost:3000/api/me", {
-    method: "GET",
-    headers: {
-        Authorization: `Bearer ${token}`,
-    },
-})
-    .then((res) => {
-        if (res.status === 401) {
-            localStorage.removeItem("token");
-            window.location.href = "login.html";
-        }
-        return res.json();
-    })
-    .then((data) => {
+        console.log(feedback);
+
         document.getElementById(
             "welcomeMessage"
-        ).innerText = `Bem-vindo, ${data.name}`;
-    })
-    .catch((err) => {
-        console.error(err);
-    });
-
-console.log("oi");
+        ).innerText = `Welcome, ${feedback.name}`;
+    }
+});
 
 function logout() {
     localStorage.removeItem("token");

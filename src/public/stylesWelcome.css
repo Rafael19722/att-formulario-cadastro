@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body h1 {
+    color: white;
+}
+
+body button {
+    width: 15%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+}
