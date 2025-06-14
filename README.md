@@ -1,77 +1,71 @@
-# Fórmulário
+# Formulary
 
 ![preview](./src/public/assets/foto_exemplo1.PNG)
 ![preview](./src/public/assets/foto_exemplo2.PNG)
 
-> Contexto
+> Context
 
-Um projeto que tem como objetivo fazer uma página de cadastro que logo após você pode validar o acesso colocando seu email e senha que foram cadastrados
-no banco de dados do sql lite, utilizando o JWT para fazer o intermédio da conexão duradoura com os dados do usuário logado.
-
----
-
-## Funcionalidades
-
--   ✅ Registro de usuário
--   ✅ Login com geração de Access Token
--   ✅ Proteção de rotas com middleware JWT
+This is a full-stack web application that allows users to register, log in, and access protected content using JWT-based authentication.  
+The backend is built with Node.js and Express, and the frontend is a custom interface using HTML, CSS, and JavaScript.  
 
 ---
 
-## Tecnologias e Ferramentas
+## Features
 
--   Node.js
--   Express
--   Prisma + SQLite
--   JWT (jsonwebtoken)
--   dotenv
--   bcrypt (para hash de senhas)
--   HTML5
--   CSS3
--   JavaScript
--   nodemon (para desenvolvimento)
+-   ✅ User registration
+-   ✅ Secure login with password hashing
+-   ✅ JWT authentication
+-   ✅ Protected pages only acessible with valid token
+-   ✅ Frontend fully integrated with backend
 
 ---
 
-## Instalação
+## Tech Stack
+-   Backend: Node.js, Express, Prisma, JWT
+-   Frontend: HTML, CSS, JavaScript
+-   Database: SQLite
 
-1. Clone o repositório:
+---
+
+## Getting Started
+
+1. Clone the repo:
 
 ```bash
 git clone https://github.com/Rafael19722/att-formulario-cadastro.git
 ```
 
-2. instale as dependências:
+2. install dependencies:
 
 ```bash
 npm install
 ```
 
-3. configure o arquivo .env:
+3. configure .env:
 
 ```bash
 DATABASE_URL="file:./dev.db"
-JWT_SECRET=suaChaveSecreta
+JWT_SECRET=yourKeySecret
 ```
 
-4. Configure e execute as migrations do banco:
+4. Configure and execute the migrations:
 
 ```bash
 npx prisma migrate dev --name init
 ```
 
-5. Entre na pasta src no terminal:
+5. Get in src paste:
 
 ```bash
 cd src
 ```
 
-6. Rode o projeto:
+6. Run the project:
 
 ```bash
 node server.js
 ```
 
-## Contato
+## Contact
 
 rafael.profissional011@gmail.com
