@@ -5,8 +5,7 @@
 
 > Context
 
-This is a full-stack web application that allows users to register, log in, and access protected content using JWT-based authentication.  
-The backend is built with Node.js and Express, and the frontend is a custom interface using HTML, CSS, and JavaScript.  
+This is a full-stack web application that allows users to register, log in, and access protected content using JWT-based authentication. The backend is built with Node.js and Express, and the frontend is a custom interface using HTML, CSS, and JavaScript.  
 
 ---
 
